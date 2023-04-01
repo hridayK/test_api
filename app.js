@@ -9,7 +9,7 @@ var port = 9000;
 app.post('/sample', function(req, res) {
     console.log('receiving data ...');
     res.send(req.body);
-    console.log(`Your name is ${req.body.name}`)
+    console.log(`Receiveed:\n ${req.body}`)
 });
 
 app.listen(port);
